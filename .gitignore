@@ -1,0 +1,7 @@
+#git_ignore
+
+# dependencies
+/node_modules
+
+# System Files
+.DS_Store
