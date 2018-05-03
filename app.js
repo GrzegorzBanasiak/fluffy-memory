@@ -3,6 +3,7 @@ var app = express();
 var applicationController = require('./controllers/applicationController');
 
 app.set('view engine', 'ejs');
+app.use(express.static('public'));
 
 applicationController(app);
 

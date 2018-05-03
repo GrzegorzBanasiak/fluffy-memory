@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <%- include('./partial/header') %>
   </head>
   <body>
-    asdas
+    <%- include('./partial/navbar') %>
+    <br>
+      <h1>Index page #  /index.ejx</h1>
+    <br>
+    <ul>
+      <% data.forEach((item)=>{ %>
+        <li>
+          <h1><%= item.title %></h1>
+          <p><%= item.content %> </p>
+      <% }) %>
+    </ul>
 
-    <%= item %>
+    <form class="" action="/item" method="post">
+      <input type="text" name="title" value="title"><br>
+      <input type="text" name="content" value="content"><br>
+      <input type="submit" name="" value="Accept">
+    </form>
   </body>
 </html>
